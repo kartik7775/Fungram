@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fungram | Social Media</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Fungram</h1>
+
+        <div class="search-bar">
+          <i class="uil uil-search"></i>
+          <input
+            type="search"
+            placeholder="Search other users, posts or businesses..."
+          />
+        </div>
+
+        <div class="create">
+          <label for="#create-post" class="btn btn-primary">Create</label>
+          <div class="profile-picture">
+            <img
+              src="/assets/IMG_20200303_102829-01-removebg-preview.jpg"
+              alt="profile-picture"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ************* main ************* -->
+    <main>
+      <div class="container">
+        <!-- ******** left ****** -->
+        <div class="left">
+          <a class="profile">
+            <div class="profile-picture">
+              <img
+                src="/assets/IMG_20200303_102829-01-removebg-preview.jpg"
+                alt="picture"
+              />
+            </div>
+            <div>
+              <h4>Kartik Nikam</h4>
+              <p>@_kartix</p>
+            </div>
+          </a>
+
+          <!-- ********** sidebar ********* -->
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="uil uil-home"></i></span>
+              <h3>Home</h3>
+            </a>
+            <a class="menu-item"
+              ><span><i class="uil uil-search"></i></span>
+              <h3>Explore</h3>
+            </a>
+
+            <a class="menu-item" id="notifications"
+              ><span
+                ><i class="uil uil-bell"
+                  ><small class="notification-count">9+</small></i
+                >
+              </span>
+              <h3>Notifications</h3>
+
+              <!-- ************  Notifications Popup ************ -->
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/30" alt="picture" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Shubham Singh</b> liked your photo
+                    <small class="text-muted">23 minutes ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/31" alt="picture" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Gauri Sachan</b> commented on your reel
+                    <small class="text-muted">11 hours ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/32" alt="picture" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Priya Nehal</b> added you in a group chat
+                    <small class="text-muted">1 day ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/33" alt="picture" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Arun Gawale</b> followed Alia Rathi
+                    <small class="text-muted">2 day ago</small>
+                  </div>
+                </div>
+
+                <div>
+                  <span>show more...</span>
+                </div>
+              </div>
+              <!-- ************ Notifications popup end ************ -->
+            </a>
+
+            <a class="menu-item" id="messages-notification">
+              <span
+                ><i class="uil uil-envelope-alt"
+                  ><small class="notification-count">5</small></i
+                >
+              </span>
+              <h3>Message</h3></a
+            >
+
+            <a class="menu-item"
+              ><span><i class="uil uil-bookmark"></i></span>
+              <h3>Saved</h3></a
+            >
+            <a class="menu-item"
+              ><span><i class="uil uil-chart-line"></i></span>
+              <h3>Analytics</h3></a
+            >
+            <a class="menu-item" id="theme">
+              <span><i class="uil uil-palette"></i></span>
+              <h3>Appearance</h3></a
+            >
+            <a class="menu-item"
+              ><span><i class="uil uil-setting"></i></span>
+              <h3>Settings</h3></a
+            >
+          </div>
+          <!-- ********** end of sidebar ********* -->
+
+          <label for="create-post" class="btn btn-primary">Create Post</label>
+        </div>
+        <!-- ********** end of left ******** -->
+
+        <!-- ********** middle ******** -->
+        <div class="middle">
+          <!-- ******** stories ******* -->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-picture">
+                <img
+                  src="assets/IMG_20200303_102829-01-removebg-preview.jpg"
+                  alt="picture"
+                />
+              </div>
+              <p class="name">Your Story</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/62" alt="picture" />
+              </div>
+              <p class="name">Neha Chadda</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/61" alt="picture" />
+              </div>
+              <p class="name">Priya Marathe</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/60" alt="picture" />
+              </div>
+              <p class="name">Smita Wagh</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/59" alt="picture" />
+              </div>
+              <p class="name">Bhushan Jagtap</p>
+            </div>
+            <!--
+            <div class="story">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/58" alt="picture" />
+              </div>
+              <p class="name">Harshal Patil</p>
+            </div> -->
+          </div>
+          <!-- end of stories -->
+
+          <form class="create-post">
+            <div class="profile-picture">
+              <img
+                src="assets/IMG_20200303_102829-01-removebg-preview.jpg"
+                alt="post"
+              />
+            </div>
+            <input
+              type="text"
+              id="create-post"
+              placeholder="What's on your mind?"
+            />
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+
+          <!-- feeds -->
+          <div class="feeds">
+            <!-- feed 1 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/58" alt="picture" />
+                  </div>
+
+                  <div class="info">
+                    <h3>Wendy Rhodes</h3>
+                    <small>California, USA, 36 seconds ago</small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img
+                  src="https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="picture"
+                />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="https://i.pravatar.cc/36" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/37" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/30" alt="picture" />
+                </span>
+                <p>Liked by <b>Guatam Patel</b> and <b>8,502 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  beautiful date night with <b>@ross45</b>
+                  <span class="hash-tag">#worker #boy</span>
+                </p>
+              </div>
+
+              <div class="comments text-muted">View all 965 comments</div>
+            </div>
+
+            <!-- feed 2 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/57" alt="picture" />
+                  </div>
+
+                  <div class="info">
+                    <h3>Ritesh Gupta</h3>
+                    <small>Norway, 15 minutes ago</small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img
+                  src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="picture"
+                />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="https://i.pravatar.cc/33" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/31" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/32" alt="picture" />
+                </span>
+                <p>Liked by <b>Asmi Diwan</b> and <b>682 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  what an afternoon here in Norway
+                  <span class="hash-tag">#mountains #travel</span>
+                </p>
+              </div>
+
+              <div class="comments text-muted">View all 6 comments</div>
+            </div>
+            <!-- feed 3 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/313" alt="picture" />
+                  </div>
+
+                  <div class="info">
+                    <h3>Bruce Wayne</h3>
+                    <small>Gotham, 45 minutes ago</small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img
+                  src="https://images.pexels.com/photos/394416/pexels-photo-394416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="picture"
+                />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="https://i.pravatar.cc/29" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/30" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/31" alt="picture" />
+                </span>
+                <p>Liked by <b>Mahi Thakur</b> and <b>875 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  this shit was just about to blow up
+                  <span class="hash-tag">#gothamsavedagain #batman</span>
+                </p>
+              </div>
+
+              <div class="comments text-muted">View all 99 comments</div>
+            </div>
+            <!-- feed 4 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/217" alt="picture" />
+                  </div>
+
+                  <div class="info">
+                    <h3>Deep Sachan</h3>
+                    <small>Leh, 2 hours ago</small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img
+                  src="https://images.pexels.com/photos/358532/pexels-photo-358532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="picture"
+                />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="https://i.pravatar.cc/22" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/23" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/24" alt="picture" />
+                </span>
+                <p>Liked by <b>Mukesh Zone</b> and <b>1,523 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  Ladakh@2023 | just woke up in the mountains
+                  <span class="hash-tag">#ladakh #peacefullife #rider</span>
+                </p>
+              </div>
+
+              <div class="comments text-muted">View all 549 comments</div>
+            </div>
+            <!-- feed 5 -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="https://i.pravatar.cc/120" alt="picture" />
+                  </div>
+
+                  <div class="info">
+                    <h3>Vishal Kothari</h3>
+                    <small>Nowhere, 5 hours ago</small>
+                  </div>
+                </div>
+
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img
+                  src="https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="picture"
+                />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share"></i></span>
+                </div>
+
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="https://i.pravatar.cc/25" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/26" alt="picture" />
+                </span>
+                <span>
+                  <img src="https://i.pravatar.cc/27" alt="picture" />
+                </span>
+                <p>Liked by <b>Reena D'souza</b> and <b>2,023 others</b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  no-body knows
+                  <span class="hash-tag">#pyramids #sand #life</span>
+                </p>
+              </div>
+
+              <div class="comments text-muted">View all 9 comments</div>
+            </div>
+          </div>
+        </div>
+        <!-- end of middle -->
+
+        <!-- right -->
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+              <h4>Messages</h4>
+              <i class="uil uil-edit"></i>
+            </div>
+
+            <!-- search bar -->
+            <div class="search-bar">
+              <i class="uil uil-search"></i>
+              <input
+                type="search"
+                placeholder="Search message"
+                id="message-search"
+              />
+            </div>
+
+            <!-- message category -->
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-requests">Requests (7)</h6>
+            </div>
+
+            <!-- message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/56" alt="picture" />
+              </div>
+
+              <div class="message-body">
+                <h5>Dinanath Chauhan</h5>
+                <p class="text-muted">I'll be there in 5s</p>
+              </div>
+            </div>
+
+            <!-- message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/53" alt="picture" />
+                <div class="active"></div>
+              </div>
+
+              <div class="message-body">
+                <h5>Sanjay Singhania</h5>
+                <p class="text-bold">7 new messages</p>
+              </div>
+            </div>
+
+            <!-- message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/54" alt="picture" />
+              </div>
+
+              <div class="message-body">
+                <h5>Vaishali Dosa</h5>
+                <p class="text-muted">No Way!!!</p>
+              </div>
+            </div>
+            <!-- message -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="https://i.pravatar.cc/55" alt="picture" />
+                <div class="active"></div>
+              </div>
+
+              <div class="message-body">
+                <h5>Khushal Khoja</h5>
+                <p class="text-bold">what's up?</p>
+              </div>
+            </div>
+          </div>
+          <!-- end of messages -->
+
+          <!-- friend requests -->
+          <div class="friend-requests">
+            <h4>Requests</h4>
+            <!-- request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="https://i.pravatar.cc/52" alt="picture" />
+                </div>
+
+                <div>
+                  <h5>Jignesh Jain</h5>
+                  <p class="text-muted">9 mutual friends</p>
+                </div>
+              </div>
+
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <!-- request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="https://i.pravatar.cc/51" alt="picture" />
+                </div>
+
+                <div>
+                  <h5>Dinesh Dani</h5>
+                  <p class="text-muted">9 mutual friends</p>
+                </div>
+              </div>
+
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <!-- request -->
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="https://i.pravatar.cc/50" alt="picture" />
+                </div>
+
+                <div>
+                  <h5>Eknath Engle</h5>
+                  <p class="text-muted">9 mutual friends</p>
+                </div>
+              </div>
+
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of right -->
+
+        <!-- theme customization -->
+        <div class="customize-theme">
+          <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">
+              Manage your font size, color, and background.
+            </p>
+
+            <!-- font size -->
+            <div class="font-size">
+              <h4>Font Size</h4>
+              <div>
+                <h6>Aa</h6>
+                <div class="choose-size">
+                  <span class="font-size-1"></span>
+                  <span class="font-size-2 active"></span>
+                  <span class="font-size-3"></span>
+                  <span class="font-size-4"></span>
+                  <span class="font-size-5"></span>
+                </div>
+                <h3>Aa</h3>
+              </div>
+            </div>
+
+            <!-- primary colors -->
+            <div class="color">
+              <h4>Color</h4>
+              <div class="choose-color">
+                <span class="color-1 active"></span>
+                <span class="color-2"></span>
+                <span class="color-3"></span>
+                <span class="color-4"></span>
+                <span class="color-5"></span>
+              </div>
+            </div>
+
+            <!-- background colors -->
+            <div class="background">
+              <h4>Background</h4>
+              <div class="choose-bg">
+                <div class="bg-1 active">
+                  <span></span>
+                  <h5 for="bg-1">Light</h5>
+                </div>
+
+                <div class="bg-2">
+                  <span></span>
+                  <h5 for="bg-2">Night</h5>
+                </div>
+
+                <div class="bg-3">
+                  <span></span>
+                  <h5 for="bg-3">Black</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
