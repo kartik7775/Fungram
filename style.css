@@ -15,7 +15,7 @@
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
   --color-secondary: hsl(252, 100%, 90%);
   --color-success: hsl(120, 100%, 65%);
-  --color-danger: hsl(0, 95%, 65%);
+  --color-danger: hsl(0, 86%, 58%);
 
   --border-radius: 2rem;
   --card-border-radius: 1rem;
@@ -55,6 +55,12 @@ body {
 
 .logo {
   font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+}
+
+.profile h4 {
+  cursor: pointer;
 }
 
 .profile-picture {
@@ -62,6 +68,7 @@ body {
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
 }
 .profile-picture img {
   display: block;
@@ -94,7 +101,8 @@ body {
   color: invert;
 }
 
-/* ********  Navbar ******** */
+
+/* ! ********  Navbar ******** */
 nav {
   width: 100%;
   background: var(--color-white);
@@ -135,6 +143,7 @@ nav .create {
   gap: 2rem;
 }
 
+
 /* *********** Main *********** */
 main {
   position: relative;
@@ -148,7 +157,8 @@ main .container {
   position: relative;
 }
 
-/* ********** left *********** */
+
+/* ! **********  left Sidebar  *********** */
 main .container .left {
   height: max-content;
   position: sticky;
@@ -165,7 +175,8 @@ main .container .left .profile {
   width: 100%;
 }
 
-/* ********** sidebar ********** */
+
+/* ! **********  Sidebar  ********** */
 
 .left .sidebar {
   margin-top: 1rem;
@@ -245,7 +256,8 @@ main .container .left .profile {
   padding: 1rem 0;
 }
 
-/* *********** notifications Popup ************ */
+
+/* ! ***********  Notifications Popup  ************ */
 
 .left .notifications-popup {
   position: absolute;
@@ -282,7 +294,8 @@ main .container .left .profile {
   display: block;
 }
 
-/* ********** middle ********** */
+
+/* ! **********  Middle  ********** */
 
 .middle .stories {
   display: flex;
@@ -303,7 +316,7 @@ main .container .left .profile {
   width: 100%;
   position: relative;
   overflow: hidden;
-  
+  cursor: pointer;
 }
 
 .middle .stories .story::before {
@@ -353,7 +366,8 @@ main .container .left .profile {
   border: 3px solid var(--color-primary);
 }
 
-/* ******* Create Post ********* */
+
+/* ! *******  Create Post  ********* */
 
 .middle .create-post {
   width: 100%;
@@ -375,7 +389,8 @@ main .container .left .profile {
   margin-right: 1rem;
 }
 
-/* ******* feeds ******** */
+
+/* ! *******  Feeds  ******** */
 
 .middle .feeds .feed {
   background: var(--color-white);
@@ -389,6 +404,7 @@ main .container .left .profile {
 .middle .feed .head {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .middle .feed .user {
@@ -412,6 +428,7 @@ main .container .left .profile {
   align-items: center;
   font-size: 1.4rem;
   margin: 0.6rem;
+  cursor: pointer;
 }
 
 .middle .liked-by {
@@ -444,7 +461,8 @@ main .container .left .profile {
   color: var(--color-primary);
 }
 
-/* ********* right ********** */
+
+/* *********  Right Sidebar  ********** */
 
 main .container .right {
   height: max-content;
@@ -479,6 +497,7 @@ main .container .right {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .right .messages .category h6 {
@@ -502,6 +521,7 @@ main .container .right {
   gap: 1rem;
   margin-bottom: 1rem;
   align-items: start;
+  cursor: pointer;
 }
 
 .right .message .profile-picture {
@@ -532,7 +552,8 @@ main .container .right {
   right: 0;
 }
 
-/* friend requests */
+
+/* ! ******  Friend Requests  ******* */
 
 .right .friend-requests {
   margin-top: 1rem;
@@ -541,6 +562,10 @@ main .container .right {
 .right .friend-requests h4 {
   color: var(--color-gray);
   margin: 1rem 0;
+}
+
+.right .friend-requests h5 {
+  cursor: pointer;
 }
 
 .right .request {
@@ -561,7 +586,8 @@ main .container .right {
   gap: 1rem;
 }
 
-/* ******** Theme Customization ********* */
+
+/* ********  Theme Customization  ********* */
 .customize-theme {
   background: rgba(255, 255, 255, 0.5);
   width: 100vw;
@@ -584,80 +610,10 @@ main .container .right {
   box-shadow: 0 0 1rem var(--color-primary);
 }
 
-/* ****** font size ******* */
-.customize-theme .font-size {
-  margin-top: 5rem;
-}
 
-.customize-theme .font-size > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--color-light);
-  padding: var(--search-padding);
-  border-radius: var(--card-border-radius);
-}
-
-.customize-theme .choose-size {
-  background: var(--color-secondary);
-  height: 0.3rem;
-  width: 100%;
-  margin: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.customize-theme .choose-size span {
-  width: 1rem;
-  height: 1rem;
-  background: var(--color-secondary);
-  border-radius: 50%;
-  cursor: pointer;
-}
-.customize-theme .choose-size span.active {
-  background: var(--color-primary);
-}
-
-/* ***** colors ***** */
-.customize-theme .choose-color {
-  background: var(--color-light);
-  padding: var(--search-padding);
-  border-radius: var(--card-border-radius);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.customize-theme .choose-color span {
-  width: 2.2rem;
-  height: 2.2rem;
-  border-radius: 50%;
-}
-
-.customize-theme .choose-color span:nth-child(1) {
-  background: hsl(252, 75%, 60%);
-}
-.customize-theme .choose-color span:nth-child(2) {
-  background: hsl(52, 75%, 60%);
-}
-.customize-theme .choose-color span:nth-child(3) {
-  background: hsl(352, 75%, 60%);
-}
-.customize-theme .choose-color span:nth-child(4) {
-  background: hsl(152, 75%, 60%);
-}
-.customize-theme .choose-color span:nth-child(5) {
-  background: hsl(202, 75%, 60%);
-}
-
-.customize-theme .choose-color span.active {
-  border: 5px solid white;
-}
-
-/* ****** background color ****** */
+/* ******  Background Color  ****** */
 .customize-theme .background {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .customize-theme .choose-bg {
@@ -703,7 +659,84 @@ main .container .right {
 }
 
 
-/* **********  media queries *********  */
+/* *****  Colors  ***** */
+.customize-theme .color {
+  margin-top: 2rem;
+}
+
+.customize-theme .choose-color {
+  background: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customize-theme .choose-color span {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+}
+
+.customize-theme .choose-color span:nth-child(1) {
+  background: hsl(252, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(2) {
+  background: hsl(52, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(3) {
+  background: hsl(352, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(4) {
+  background: hsl(152, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(5) {
+  background: hsl(202, 75%, 60%);
+}
+
+.customize-theme .choose-color span.active {
+  border: 5px solid white;
+}
+
+
+/* **********  Font Size  *********** */
+.customize-theme .font-size {
+  margin-top: 2rem;
+}
+
+.customize-theme .font-size > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+}
+
+.customize-theme .choose-size {
+  background: var(--color-gray);
+  height: 0.3rem;
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customize-theme .choose-size span {
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.customize-theme .choose-size span.active {
+  background: var(--color-primary);
+}
+
+
+/* **********  Media Queries *********  */
 
 /* laptop or large tablets */
 @media screen and (max-width: 1200px){
@@ -782,7 +815,6 @@ main .container .right {
     width: 92vw;
   }
 }
-
 
 @media screen and (max-width: 450px) {  
   *{
